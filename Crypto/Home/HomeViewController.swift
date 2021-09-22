@@ -1,6 +1,7 @@
 import UIKit
 
-class ViewController: UIViewController{
+class HomeViewController: UIViewController{
+    
     
     private let tableView: UITableView = {
         let tableView = UITableView(frame: .zero, style: .grouped)
@@ -22,10 +23,18 @@ class ViewController: UIViewController{
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Crypto Tracker"
+        
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationItem.title = "Home"
+        
+        
         view.addSubview(tableView)
         tableView.dataSource = self
         tableView.delegate = self
+        
+        let spinner = UIActivityIndicatorView()
+        spinner.startAnimating()
+        tableView.backgroundView = spinner
         
         APICaller.shared.getAllCryptoData { [weak self] result in
             switch result {
@@ -33,7 +42,7 @@ class ViewController: UIViewController{
                 self?.viewModels = models.compactMap({ model in
                     // Number Formatter
                     let price = model.price_usd ?? 0
-                    let formatter = ViewController.numberFormatter
+                    let formatter = HomeViewController.numberFormatter
                     let priceString = formatter.string(from: NSNumber(value: price))
                     
                     let iconUrl = URL(
@@ -67,7 +76,7 @@ class ViewController: UIViewController{
 
 }
 
-extension ViewController: UITableViewDataSource, UITableViewDelegate {
+extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModels.count
