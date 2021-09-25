@@ -12,3 +12,9 @@ struct Icon: Codable {
     let asset_id: String
     let url: String
 }
+
+struct ChosenCrypto: Codable {
+    let asset_id: String
+    let name: String
+    let price_usd: Float
+}

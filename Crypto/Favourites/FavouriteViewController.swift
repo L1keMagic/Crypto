@@ -8,6 +8,6 @@ class FavouriteViewController: UIViewController {
         navigationItem.title = "Favourites"
         view.backgroundColor = .brown
     }
-    
+
 
 }
