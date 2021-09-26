@@ -7,18 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		234835B326FB3911003C3B95 /* APIModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234835B226FB3911003C3B95 /* APIModels.swift */; };
+		234835B526FB3931003C3B95 /* CryptoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234835B426FB3931003C3B95 /* CryptoTableViewCell.swift */; };
+		234835B726FB3949003C3B95 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234835B626FB3949003C3B95 /* APICaller.swift */; };
+		234835B926FB55A3003C3B95 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234835B826FB55A3003C3B95 /* MainTabBarController.swift */; };
+		234835BB26FB5607003C3B95 /* WalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234835BA26FB5607003C3B95 /* WalletViewController.swift */; };
+		234835BD26FB6590003C3B95 /* FavouriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234835BC26FB6590003C3B95 /* FavouriteViewController.swift */; };
+		234835BF26FB65C4003C3B95 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234835BE26FB65C4003C3B95 /* FriendsViewController.swift */; };
+		234835C126FB65D1003C3B95 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234835C026FB65D1003C3B95 /* SettingsViewController.swift */; };
+		234835CA26FDDEC9003C3B95 /* DetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234835C926FDDEC9003C3B95 /* DetailedViewController.swift */; };
+		234835CC26FFAB4C003C3B95 /* ChosenCryptoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234835CB26FFAB4C003C3B95 /* ChosenCryptoTableViewCell.swift */; };
+		234835CE2700623E003C3B95 /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234835CD2700623E003C3B95 /* Spinner.swift */; };
 		23A55AFD26F4DB7500A3B010 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A55AFC26F4DB7500A3B010 /* AppDelegate.swift */; };
 		23A55AFF26F4DB7500A3B010 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A55AFE26F4DB7500A3B010 /* SceneDelegate.swift */; };
-		23A55B0126F4DB7500A3B010 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A55B0026F4DB7500A3B010 /* ViewController.swift */; };
+		23A55B0126F4DB7500A3B010 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A55B0026F4DB7500A3B010 /* HomeViewController.swift */; };
 		23A55B0626F4DB7700A3B010 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23A55B0526F4DB7700A3B010 /* Assets.xcassets */; };
 		23A55B0926F4DB7700A3B010 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23A55B0726F4DB7700A3B010 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		234835B226FB3911003C3B95 /* APIModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIModels.swift; sourceTree = "<group>"; };
+		234835B426FB3931003C3B95 /* CryptoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTableViewCell.swift; sourceTree = "<group>"; };
+		234835B626FB3949003C3B95 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
+		234835B826FB55A3003C3B95 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		234835BA26FB5607003C3B95 /* WalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletViewController.swift; sourceTree = "<group>"; };
+		234835BC26FB6590003C3B95 /* FavouriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteViewController.swift; sourceTree = "<group>"; };
+		234835BE26FB65C4003C3B95 /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
+		234835C026FB65D1003C3B95 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		234835C926FDDEC9003C3B95 /* DetailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedViewController.swift; sourceTree = "<group>"; };
+		234835CB26FFAB4C003C3B95 /* ChosenCryptoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChosenCryptoTableViewCell.swift; sourceTree = "<group>"; };
+		234835CD2700623E003C3B95 /* Spinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
 		23A55AF926F4DB7500A3B010 /* Crypto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crypto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23A55AFC26F4DB7500A3B010 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23A55AFE26F4DB7500A3B010 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		23A55B0026F4DB7500A3B010 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		23A55B0026F4DB7500A3B010 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		23A55B0526F4DB7700A3B010 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23A55B0826F4DB7700A3B010 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		23A55B0A26F4DB7700A3B010 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -35,6 +57,69 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		234835C226FB6784003C3B95 /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				234835B826FB55A3003C3B95 /* MainTabBarController.swift */,
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
+		234835C326FB679D003C3B95 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				234835B226FB3911003C3B95 /* APIModels.swift */,
+				234835B426FB3931003C3B95 /* CryptoTableViewCell.swift */,
+				234835CB26FFAB4C003C3B95 /* ChosenCryptoTableViewCell.swift */,
+				234835B626FB3949003C3B95 /* APICaller.swift */,
+				23A55AFE26F4DB7500A3B010 /* SceneDelegate.swift */,
+				23A55AFC26F4DB7500A3B010 /* AppDelegate.swift */,
+				234835CD2700623E003C3B95 /* Spinner.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		234835C426FB67F8003C3B95 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				23A55B0026F4DB7500A3B010 /* HomeViewController.swift */,
+				234835C926FDDEC9003C3B95 /* DetailedViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		234835C526FB6808003C3B95 /* Wallet */ = {
+			isa = PBXGroup;
+			children = (
+				234835BA26FB5607003C3B95 /* WalletViewController.swift */,
+			);
+			path = Wallet;
+			sourceTree = "<group>";
+		};
+		234835C626FB6814003C3B95 /* Favourites */ = {
+			isa = PBXGroup;
+			children = (
+				234835BC26FB6590003C3B95 /* FavouriteViewController.swift */,
+			);
+			path = Favourites;
+			sourceTree = "<group>";
+		};
+		234835C726FB6837003C3B95 /* Friends */ = {
+			isa = PBXGroup;
+			children = (
+				234835BE26FB65C4003C3B95 /* FriendsViewController.swift */,
+			);
+			path = Friends;
+			sourceTree = "<group>";
+		};
+		234835C826FB684A003C3B95 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				234835C026FB65D1003C3B95 /* SettingsViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 		23A55AF026F4DB7500A3B010 = {
 			isa = PBXGroup;
 			children = (
@@ -54,9 +139,13 @@
 		23A55AFB26F4DB7500A3B010 /* Crypto */ = {
 			isa = PBXGroup;
 			children = (
-				23A55AFC26F4DB7500A3B010 /* AppDelegate.swift */,
-				23A55AFE26F4DB7500A3B010 /* SceneDelegate.swift */,
-				23A55B0026F4DB7500A3B010 /* ViewController.swift */,
+				234835C426FB67F8003C3B95 /* Home */,
+				234835C526FB6808003C3B95 /* Wallet */,
+				234835C626FB6814003C3B95 /* Favourites */,
+				234835C726FB6837003C3B95 /* Friends */,
+				234835C826FB684A003C3B95 /* Settings */,
+				234835C326FB679D003C3B95 /* Helpers */,
+				234835C226FB6784003C3B95 /* Routing */,
 				23A55B0526F4DB7700A3B010 /* Assets.xcassets */,
 				23A55B0726F4DB7700A3B010 /* LaunchScreen.storyboard */,
 				23A55B0A26F4DB7700A3B010 /* Info.plist */,
@@ -133,9 +222,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23A55B0126F4DB7500A3B010 /* ViewController.swift in Sources */,
+				234835B326FB3911003C3B95 /* APIModels.swift in Sources */,
+				234835B726FB3949003C3B95 /* APICaller.swift in Sources */,
+				234835C126FB65D1003C3B95 /* SettingsViewController.swift in Sources */,
+				234835CE2700623E003C3B95 /* Spinner.swift in Sources */,
+				23A55B0126F4DB7500A3B010 /* HomeViewController.swift in Sources */,
+				234835B926FB55A3003C3B95 /* MainTabBarController.swift in Sources */,
 				23A55AFD26F4DB7500A3B010 /* AppDelegate.swift in Sources */,
+				234835CC26FFAB4C003C3B95 /* ChosenCryptoTableViewCell.swift in Sources */,
+				234835BB26FB5607003C3B95 /* WalletViewController.swift in Sources */,
+				234835B526FB3931003C3B95 /* CryptoTableViewCell.swift in Sources */,
 				23A55AFF26F4DB7500A3B010 /* SceneDelegate.swift in Sources */,
+				234835BF26FB65C4003C3B95 /* FriendsViewController.swift in Sources */,
+				234835CA26FDDEC9003C3B95 /* DetailedViewController.swift in Sources */,
+				234835BD26FB6590003C3B95 /* FavouriteViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
