@@ -27,14 +27,13 @@ class HomeViewController: UIViewController{
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationItem.title = "Home"
         
+        let searchBar = UISearchController(searchResultsController: nil)
+        navigationItem.searchController = searchBar
         
         view.addSubview(tableView)
         tableView.dataSource = self
         tableView.delegate = self
-        
-        let spinner = UIActivityIndicatorView()
-        spinner.startAnimating()
-        tableView.backgroundView = spinner
+        spinner(tableView: tableView)
         
         APICaller.shared.getAllCryptoData { [weak self] result in
             switch result {
@@ -100,3 +99,28 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
     }
 }
 
+//extension HomeViewController: UISearchBarDelegate {
+//    func searchBar() {
+//        let searchBar: UISearchBar = UISearchBar()
+//        searchBar.searchBarStyle = UISearchBar.Style.prominent
+//        searchBar.placeholder = " Search..."
+//        searchBar.sizeToFit()
+//        searchBar.isTranslucent = false
+//        searchBar.backgroundImage = UIImage()
+//        searchBar.delegate = self
+//        view.addSubview(searchBar)
+//    }
+//}
+
+//extension HomeViewController: UISearchResultsUpdating {
+//    func updateSearchResults(for searchController: UISearchController) {
+//        if searchController.searchBar.text! == "" {
+////            filtered = data
+//        }
+//        else {
+//            viewModels = viewModels.filter  {$0.name.lowercased().contains(searchController.searchBar.text!.lowercased())}
+//            }
+//        self.tableView.reloadData()
+//    }
+//
+//}

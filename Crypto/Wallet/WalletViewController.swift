@@ -14,7 +14,7 @@ class WalletViewController: UIViewController {
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationItem.title = "Wallet"
         
-        view.backgroundColor = .blue
+        view.backgroundColor = .white
     }
     
 }

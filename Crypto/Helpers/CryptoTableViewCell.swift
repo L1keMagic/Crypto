@@ -21,13 +21,13 @@ class CryptoTableViewCell: UITableViewCell {
     // Subviews
     private let nameLabel: UILabel = {
         let label = UILabel()
-        label.font = .systemFont(ofSize: 24, weight: .medium )
+        label.font = .systemFont(ofSize: 22, weight: .medium )
         return label
     }()
     
     private let symbolLabel: UILabel = {
         let label = UILabel()
-        label.font = .systemFont(ofSize: 20, weight: .regular )
+        label.font = .systemFont(ofSize: 18, weight: .regular )
         return label
     }()
     
@@ -41,10 +41,22 @@ class CryptoTableViewCell: UITableViewCell {
     
     private let iconImageView: UIImageView = {
         let imageView = UIImageView()
-//        imageView.backgroundColor = .red
         imageView.contentMode = .scaleAspectFit
         return imageView
     }()
+    
+    private let starButton: UIButton = {
+        let button = UIButton()
+        button.setImage(UIImage(systemName: "star"), for: .normal)
+//        button.addTarget(self, action: #selector(handleMarkAsFavourite), for: .touchUpInside)
+        return button
+    }()
+    
+//    @objc private func handleMarkAsFavourite() {
+//        print("Yeah")
+//    }
+    
+    
     
     // Init
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
@@ -52,7 +64,8 @@ class CryptoTableViewCell: UITableViewCell {
         contentView.addSubview(nameLabel)
         contentView.addSubview(symbolLabel)
         contentView.addSubview(priceLabel)
-        contentView.addSubview(iconImageView )
+        contentView.addSubview(iconImageView)
+        contentView.addSubview(starButton)
     }
     
     required init?(coder: NSCoder) {
@@ -65,7 +78,7 @@ class CryptoTableViewCell: UITableViewCell {
         
         let size: CGFloat = contentView.frame.size.height/1.1
         iconImageView .frame = CGRect(
-            x: 20,
+            x: 40,
             y: (contentView.frame.size.height - size)/2,
             width: size,
             height: size
@@ -74,16 +87,17 @@ class CryptoTableViewCell: UITableViewCell {
         nameLabel.sizeToFit()
         symbolLabel.sizeToFit()
         priceLabel.sizeToFit()
+        starButton.sizeToFit()
         
         nameLabel.frame = CGRect(
-            x: 30 + size,
+            x: 50 + size,
             y: 0,
             width: contentView.frame.size.width/2,
             height: contentView.frame.size.height/2
         )
         
         symbolLabel.frame = CGRect(
-            x: 30 + size,
+            x: 50 + size,
             y: contentView.frame.size.height/2,
             width: contentView.frame.size.width/2,
             height: contentView.frame.size.height/2
@@ -93,6 +107,13 @@ class CryptoTableViewCell: UITableViewCell {
             x: contentView.frame.size.width/2,
             y: 0,
             width: (contentView.frame.size.width/2) - 15,
+            height: contentView.frame.size.height
+        )
+        
+        starButton.frame = CGRect(
+            x: 0,
+            y: 0,
+            width: contentView.frame.size.width/10,
             height: contentView.frame.size.height
         )
     }
