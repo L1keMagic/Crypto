@@ -1,10 +1,3 @@
-//
-//  DatailedViewController.swift
-//  Crypto
-//
-//  Created by Артур Карачев on 24.09.2021.
-//
-
 import UIKit
 
 class DetailedViewController: UIViewController {
@@ -22,7 +15,6 @@ class DetailedViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Details"
-//        setTable()
         fetchData()
     }
     

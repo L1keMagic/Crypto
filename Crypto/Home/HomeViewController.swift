@@ -95,6 +95,7 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        APICaller.Constants.assetsChosenCrypto = "\(viewModels[indexPath.row].symbol)/"
         self.navigationController?.show(DetailedViewController(), sender: nil)
     }
 }

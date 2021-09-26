@@ -3,11 +3,11 @@ import Foundation
 final class APICaller {
     static let shared = APICaller()
     
-    private struct Constants {
+    struct Constants {
         static let apiKey = "C081EEEF-35E2-47E3-9427-4524D35F6717"
         static let assetsEndPoint = "https://rest-sandbox.coinapi.io/v1/assets/"
         static let assetsIcons = "icons/55/"
-        static var assetsChosenCrypto = "doge/"
+        public static var assetsChosenCrypto = "doge/"
     }
     
     private init() {}
