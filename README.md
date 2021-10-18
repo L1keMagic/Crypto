@@ -1,5 +1,7 @@
 # Crypto
 
+<img src="src/demo.gif" alt="демо">
+
 **Тема проекта**
 
 Разработка приложения Crypto
